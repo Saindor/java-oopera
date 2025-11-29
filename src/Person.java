@@ -8,10 +8,18 @@ public class Person {
             this.name = name;
             this.surname = surname;
             this.gender = gender;
+
+            PersonChecking.register(this);
         }
 
-        @Override
+
+
+    @Override
         public String toString() {
+            return name + " " + surname;
+        }
+
+        public String getFullName(){
             return name + " " + surname;
         }
 
